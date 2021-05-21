@@ -1,0 +1,118 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+:root {
+  --primary-color: #fff;
+  /* --secondaryColor: #101024;  */
+  --secondary-color: #081142;
+  --accent-color: #080173;
+}
+/* 080173 */
+/* MOBILE FIRST */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--primary-color);
+}
+p {
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1em;
+  /* max-width: 1200px; */
+}
+.navbar__list {
+  display: flex;
+}
+.navbar__list a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding-left: 1em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.navbar__list a:hover{
+    color: var(--accent-color);
+}
+.navbar__list li {
+  list-style: none;
+}
+/* .navbar__list__lets-chat{
+    border: solid 2px #080173;
+    border-radius: 50%;
+    padding: 1.2rem 1rem;
+} */
+.navbar__logo {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  line-height: 0.9;
+}
+.navbar__logo span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: .8rem;
+  text-decoration: underline;
+  color: #484680;
+}
+.navbar__logo span:hover {
+  color: #524faa;
+}
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 0em;
+  text-align: center;
+}
+.hero-section__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 0;
+}
+.hero-section__subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-weight: normal;
+  line-height: 1;
+  color: var(--secondary-color);
+}
+.hero-section__female-avatar {
+  width: 210px;
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  #navbar {
+    padding: 0 3em;
+  }
+  .navbar__logo {
+    font-size: 2rem;
+  }
+  .navbar__logo span {
+    font-size: 1.5rem;
+  }
+  #hero-section {
+    padding: 1em 3em;
+  }
+  .hero-section__title {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: default;
+  }
+  .hero-section__subtitle {
+    font-weight: normal;
+    line-height: 0;
+  }
+}
